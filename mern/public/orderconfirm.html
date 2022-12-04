@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Order Confirm</title>
+</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<body>
+    <div class="container">
+        <h1>Order Confirmed</h1>
+        <div class="cardcontainer">
+            <div class="photo">
+                <img src="https://static.vecteezy.com/system/resources/previews/002/737/812/original/order-confirm-concept-illustration-free-vector.jpg">
+                <div class="photos">Booked</div>
+            </div>
+            <div class="content">
+                <p class="txt4">Thank You For Using Go Pharma</p>
+                <p class="txt5" id="orderid"></p>
+                
+            </div>
+            <div class="footer">
+                <p><a class="waves-effect waves-light btn" href="index.html">Continue Shopping</a></p>	
+            </div>
+        </div>
+    </div>
+</body>
+<style type="text/css">
+	body{
+        margin: 0;
+        padding: 0;
+        font-family: 'roboto' , sans-serif;
+        background-color: #F2F2F2;
+    }
+    h1{
+        text-align: center;
+        color: #333333;
+    }
+    .cardcontainer{
+        width: 350px;
+        height: 500px;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        transition: 0.3s;
+    }
+    .cardcontainer:hover{
+        box-shadow: 0 0 45px gray;
+    }
+    .photo{
+        height: 300px;
+        width: 100%;
+    }
+    .photo img{
+        height: 100%;
+        width: 100%;
+    }
+    .txt1{
+        margin: auto;
+        text-align: center;
+        font-size: 17px;
+    }
+    .content{
+        width: 80%;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: -33px;
+    }
+    .photos{
+        width: 110px;
+        height: 30px;
+        background-color: #E74C3C;
+        color: white;
+        position: relative;
+        top: -30px;
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    .txt4{
+        font-size:27px;
+        position: relative;
+        top: 33px;
+    }
+    .txt5{
+        position: relative;
+        top: 18px;
+        color: #E74C3C;
+        font-size: 23px;
+    }
+    
+    .footer{
+        width: 80%;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        position: relative;
+        top: -15px;
+    }
+    .btn{
+        position: relative;
+        top: 20px;
+    }
+    
+</style>
+<script type="text/javascript">
+		app.post("/order",async (req,res)=>{
+	try{
+		const id=req.body._id;
+		getElementById('orderid').innerHTML = id;
+		
+		}catch(err){
+		res.status(400).send(err);
+	}
+})
+</script>
+
+</html>

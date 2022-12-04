@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Go Pharama Package</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        
+                        <h3>Welcome</h3>
+                        <p>Please Fill the form to book a Package</p>
+                        <img src="https://static.vecteezy.com/system/resources/previews/002/127/142/original/medicine-and-healthcare-concept-illustration-health-examination-patient-consultation-can-use-for-web-homepage-mobile-apps-web-banner-character-cartoon-illustration-flat-style-free-vector.jpg" alt=""style="height: 250px; width: 250px" class="rounded">
+                    </div>
+                    <div class="col-md-9 register-right">
+                       
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Book a Package</h3>
+                                <form action="/package" method="POST">
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name *" value="" name="firstname" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name *" value="" name="lastname" />
+                                        </div>
+                              
+                                        <div class="form-group">
+                                            <div class="col-md-8">
+                                                <label for="state">PackageSwasthya</label>
+                                                     <select class="custom-select d-block w-100" id="packages" required="" name="packages">
+                                                            <option value="">Choose...</option>
+                                                            <option>SWASTHYA Rs.999</option>
+                                                            <option>HEALTH PACK PREMIUM Rs.2000</option>
+                                                            <option>HEALTH PACK Rs.999</option>
+                                                            <option>SHIELD PACK Rs.999</option>
+                                                            <option>ECG Rs.500</option>
+                                                            <option>ECHO Rs.1500</option>
+                                                            <option>DIABETIC CHECKUP Rs.800</option>
+                                                            <option>PET SCAN Rs.5000</option>
+                                                            <option>ULTRASOUND Rs.4500</option>
+                                                   </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-5">
+                                                <label for="plan">Plan</label>
+                                                     <select class="custom-select d-block w-100" id="plan" required="" name="plan">
+                                                            <option value="">Choose...</option>
+                                                            <option>6 Months</option>
+                                                            <option>1 Year</option>
+                                                            <option>2 Year</option>
+                                                            <option>3 Year</option>
+                                                            
+                                                   </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Your Email *" value="" name="email" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" minlength="10" maxlength="10"  class="form-control" placeholder="Your Phone *" value="" name="mobile" />
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Enter Your City " value="" name="city" />
+                                        </div>
+                                        <input type="submit" class="btnRegister"  value="Book"/>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                      
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+<style type="text/css">
+.register{
+    background: #8B7E74;
+    margin-top: 3%;
+    padding: 3%;
+}
+.register-left{
+    text-align: center;
+    color: #fff;
+    margin-top: 4%;
+}
+.register-left input{
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+.register-right{
+    background: #f8f9fa;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+}
+.register-left img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.register-left p{
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+.register .register-form{
+    padding: 10%;
+    margin-top: 10%;
+}
+.btnRegister{
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+.register .nav-tabs{
+    margin-top: 3%;
+    border: none;
+    background: #0062cc;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+}
+.register .nav-tabs .nav-link{
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+.register .nav-tabs .nav-link.active{
+    width: 100px;
+    color: #0062cc;
+    border: 2px solid #0062cc;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.register-heading{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #495057;
+}
+            </style>
+</body>
+</html>
