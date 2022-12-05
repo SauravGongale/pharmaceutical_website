@@ -1,0 +1,160 @@
+#MedPage {
+  background-color: #416a59;
+  color:white;
+}
+#Med {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 8%;
+ 
+}
+#info {
+  margin-left: 8%;
+  margin-right: 5%;
+}
+table,
+td {
+  border-right: 1px groove grey;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: grey;
+}
+td:hover {
+  color: rgb(50, 174, 177);
+}
+
+table {
+  width: 100%;
+  height: 40px;
+}
+.Medname {
+  font-size: 18px;
+  color: grey;
+}
+.h4 {
+  color: rgb(50, 174, 177);
+  font-size: 17px;
+  font-weight: 300;
+}
+.cat {
+  color: rgb(50, 174, 177);
+  font-size: 22px;
+  font-weight: bold;
+}
+.h2,
+.h3 {
+  font-size: 20px;
+}
+#all {
+  color: rgb(50, 174, 177);
+}
+#offer {
+  color: grey;
+}
+.description {
+  font-size: 16px;
+  color: rgb(50, 174, 177);
+}
+@media screen and (min-width: 0px) and (max-width: 200px) {
+  #Med {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 720px) {
+  #Med {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* footer--------------------------------------------------------------------------------------- */
+#containerG {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+}
+#containerG .h1,
+.p {
+  color: #24aeb1;
+}
+
+#box {
+  display: flex;
+  justify-content: space-evenly;
+  /*border: 1px solid red;*/
+  margin: 10px;
+}
+#box > div > ul > a {
+  /*border: 2px solid red;*/
+  /*margin: 20px;*/
+  line-height: 30px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+div > li {
+  justify-content: center;
+}
+.input {
+  border: 0px;
+  margin: 5px;
+  margin-top: 10px;
+}
+
+div > .img {
+  width: 100%;
+}
+.und {
+  margin-top: 150px;
+}
+#link {
+  display: flex;
+  justify-content: space-evenly;
+}
+.box4 {
+  width: 20%;
+}
+.box4 > .img {
+  width: 40%;
+}
+.img {
+  margin-top: 20px;
+  width: 100px;
+  /* border: 1px solid red; */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+a:link {
+  /*color: red;*/
+  background-color: transparent;
+  text-decoration: none;
+}
+.nav {
+  /*width: 100%;*/
+  background-color: rgb(50, 174, 177);
+  display: flex;
+  padding: 35px 50px;
+}
+.flex {
+  display: flex;
+}
+.center {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#payment-offer-section > h3,
+#previes-order-section > h3,
+#trend-section > h3 {
+  margin-left: 30px;
+}
+/* Default css end */
+
+
