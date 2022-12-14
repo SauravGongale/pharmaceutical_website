@@ -20,3 +20,7 @@ The application is reduced as much as possible to avoid errors while entering th
 ABSTRACT --
 The purpose of Pharmaceutical Website is to provide A easy experience to the user to purchase or find any medicine or any health related product. We have 
 also proved a section for lab test and the new covid lab section which can help user. 
+
+Use Case Diagram : 
+![UML drawio](https://user-images.githubusercontent.com/81411445/207503025-234bcbb3-d098-4980-ab1c-603c44470641.png)
+
