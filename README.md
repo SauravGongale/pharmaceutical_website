@@ -24,3 +24,6 @@ also proved a section for lab test and the new covid lab section which can help 
 Use Case Diagram : 
 ![UML drawio](https://user-images.githubusercontent.com/81411445/207503025-234bcbb3-d098-4980-ab1c-603c44470641.png)
 
+Entity-Relationship Diagram : 
+![ER drawio (1)](https://user-images.githubusercontent.com/81411445/207507328-fc8c0f9d-e9ab-4f31-b8e0-8f9ba5dbf2d9.png)
+
